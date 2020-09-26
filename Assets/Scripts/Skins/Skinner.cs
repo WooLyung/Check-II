@@ -11,7 +11,8 @@ public class Skinner : MonoBehaviour
         // 타일링
         for (int x = -7; x <= 7; x++)
         {
-            for (int y = -12; y <= 12; y++)
+            for (int y = -12; y <= 12
+                ; y++)
             {
                 var newTile = Instantiate(tile, transform);
                 newTile.name = "tile";
