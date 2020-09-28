@@ -64,7 +64,6 @@ Shader "Unlit/TitleShader"
 					fixed4 col_grab = tex2D(_GrabTexture, i.uvgrab);
 
 					col_grab = 1 - sqrt(1 - col_grab * col_grab);
-					col_grab.rgb = min(1, col_grab.rgb + 0.6f);
 					col_main = float4(1, 1, 1, col_main.a) * _Color;
 					
 					return col_grab * weight + col_main * (1 - weight);
