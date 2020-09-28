@@ -5,6 +5,7 @@ using UnityEngine;
 public class Skinner : MonoBehaviour
 {
     public GameObject tile;
+    public SkinEffect[] effects = new SkinEffect[1];
 
     private void Awake()
     {
@@ -18,6 +19,14 @@ public class Skinner : MonoBehaviour
                 newTile.name = "tile";
                 newTile.transform.position = new Vector3(x, y, -1);
             }
+        }
+    }
+
+    private void Update()
+    {
+        foreach (var eff in effects)
+        {
+            eff.EffectUpdate();
         }
     }
 }

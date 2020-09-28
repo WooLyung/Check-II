@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 376897040}
   - component: {fileID: 376897041}
   m_Layer: 0
-  m_Name: SKIN_SKY_skinner
+  m_Name: sky skinner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,6 +244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 4355603173554490865, guid: 59422ed475529e44fb6d2439079998bc, type: 3}
+  effects:
+  - {fileID: 839218227}
+  - {fileID: 2019272739}
 --- !u!1 &388471774
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839218225}
   - component: {fileID: 839218226}
+  - component: {fileID: 839218227}
   m_Layer: 0
   m_Name: Spot Light 1
   m_TagString: Untagged
@@ -400,6 +404,19 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &839218227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839218224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec8d86cf18498847ac5a66895fd0632, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 839218226}
 --- !u!1 &891268284
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2019272737}
   - component: {fileID: 2019272738}
+  - component: {fileID: 2019272739}
   m_Layer: 0
   m_Name: Spot Light 2
   m_TagString: Untagged
@@ -771,6 +789,19 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2019272739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019272736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291300f9414347d4b8698b42cc8db9ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 2019272738}
 --- !u!1 &2087148561
 GameObject:
   m_ObjectHideFlags: 0
